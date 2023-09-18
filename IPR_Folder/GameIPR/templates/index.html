@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, World! This is where the user should be logged in.</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a basic HTML "Hello, World!" example.</p>
+    
+    <!-- Button to change the URL and trigger the request -->
+    <button id="quizButton">Quiz</button>
+
+    <script>
+        // JavaScript to handle button click event
+        document.getElementById('quizButton').addEventListener('click', function() {
+            window.location.href = '/quiz/';  // Change the URL to '/quiz/' (the URL pattern for the 'quiz' view)
+        });
+    </script>
+</body>
+</html>

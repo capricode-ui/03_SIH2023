@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Game</title>
+</head>
+<body>
+    <h1>Quiz Game</h1>
+
+    {% if current_question %}
+    <form method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend>{{ current_question.question_text }}</legend>
+            <label>
+                <input type="radio" name="user_answer" value="A">
+                {{ current_question.option1 }}
+            </label><br>
+            <label>
+                <input type="radio" name="user_answer" value="B">
+                {{ current_question.option2 }}
+            </label><br>
+            <label>
+                <input type="radio" name="user_answer" value="C">
+                {{ current_question.option3 }}
+            </label><br>
+            <label>
+                <input type="radio" name="user_answer" value="D">
+                {{ current_question.option4 }}
+            </label><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    {% endif %}
+
+    
+</body>
+</html>
