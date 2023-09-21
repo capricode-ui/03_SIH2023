@@ -5,6 +5,7 @@ from quiz import views
 
 
 urlpatterns = [
-   path("",views.quiz,name='quiz')
+   path("quiz/",views.quiz,name='quiz')
+   
  
 ]

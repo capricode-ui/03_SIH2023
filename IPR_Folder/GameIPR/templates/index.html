@@ -8,13 +8,19 @@
     <p>This is a basic HTML "Hello, World!" example.</p>
     
     <!-- Button to change the URL and trigger the request -->
-    <button id="quizButton">Quiz</button>
+    <a href="{% url "quiz" %}"> Quiz </a>
+    
 
-    <script>
+
+    
+    <!--<script>
         // JavaScript to handle button click event
         document.getElementById('quizButton').addEventListener('click', function() {
             window.location.href = '/quiz/';  // Change the URL to '/quiz/' (the URL pattern for the 'quiz' view)
         });
-    </script>
+    </script>!-->
+
+
+
 </body>
 </html>

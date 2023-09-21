@@ -48,3 +48,8 @@ def quiz(request):
         'is_correct': is_correct,              # Whether the answer is correct or not
     }
     return render(request, 'quiz.html', context)
+
+
+
+
+
