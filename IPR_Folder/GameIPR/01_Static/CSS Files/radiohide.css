@@ -1,0 +1,22 @@
+/* Hide the default radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the label to look like a clickable text */
+.radio-label {
+    cursor: pointer;
+    display: block;
+    padding: 10px; /* Add padding for better clickability */
+}
+
+/* Style the label when the radio button is checked */
+.radio-label input[type="radio"]:checked + label {
+    background-color: #ff00b7; /* Change the background color to indicate selection */
+    color: rgb(54, 211, 40); /* Change text color to make it more visible when selected */
+}
+.radio-label{
+    cursor: pointer;
+    background-color: rebeccapurple;
+    color: aquamarine;
+}
