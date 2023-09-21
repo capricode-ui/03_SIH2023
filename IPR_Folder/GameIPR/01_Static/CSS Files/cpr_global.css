@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-bangers: Bangers;
+
+  /* font sizes */
+  --font-size-31xl: 50px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-blueviolet-100: #9135e7;
+}
