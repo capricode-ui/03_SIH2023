@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-barlow: Barlow;
+    --font-bangers: Bangers;
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-7xl: 26px;
+    --font-size-6xl: 25px;
+    --font-size-xl: 20px;
+    --font-size-51xl: 70px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-whitesmoke: #f9f9f9;
+  
+    /* Border radiuses */
+    --br-4xs: 9px;
+  }
+  
