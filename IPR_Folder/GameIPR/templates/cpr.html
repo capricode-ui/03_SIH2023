@@ -28,7 +28,7 @@
         <img
           class="d49688b462000f1a628c829aa73c08-icon"
           alt=""
-          src="{% static "Images/d49688b462000f1a628c829aa73c0812-1@2x.png"%}"
+          src=" {% static current_question.question_image %}"
         />
 
         <div class="questions">
@@ -62,10 +62,7 @@
           </div>
         </div>
       </div>
-      <div class="submit"><input type="submit" value="Submit"></div>
-      
-
-      
+      <div class="submit"> <input type="submit" value="Submit"></div>
       
     {% endif %}
   </body>
