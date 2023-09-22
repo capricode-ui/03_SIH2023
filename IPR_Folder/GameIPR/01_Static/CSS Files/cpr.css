@@ -185,3 +185,7 @@
   color: var(--color-white);
   font-family: var(--font-bangers);
 }
+input[type="submit"]{
+  display: flex;
+  justify-content: center;
+}
