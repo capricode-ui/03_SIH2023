@@ -185,7 +185,17 @@
   color: var(--color-white);
   font-family: var(--font-bangers);
 }
-input[type="submit"]{
-  display: flex;
-  justify-content: center;
+.submit{
+  position: relative;
+  left: 50vw;
+  bottom: 34px;
+  margin-bottom: 51px;
+  font-size: xx-large;
+  padding: 7px 13px;
+  border-radius: 16px;
+  background-color: darkviolet;
+  color: white;
+  font-weight: bolder;
+  font-family: cursive;
+  letter-spacing: 2px;
 }
