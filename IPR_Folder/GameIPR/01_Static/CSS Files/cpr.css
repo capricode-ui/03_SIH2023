@@ -86,6 +86,16 @@
   font-size: 40px;
   color: var(--color-blueviolet-100);
 }
+
+.options {
+
+  position: relative;
+  
+
+
+}
+
+
 .option-rec {
   position: absolute;
   top: 0;
