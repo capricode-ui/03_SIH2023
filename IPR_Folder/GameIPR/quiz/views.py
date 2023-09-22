@@ -47,7 +47,7 @@ def quiz(request):
         'user_answer': user_answer,            # The user's selected answer
         'is_correct': is_correct,              # Whether the answer is correct or not
     }
-    return render(request, 'quiz.html', context)
+    return render(request, 'cpr.html', context)
 
 
 

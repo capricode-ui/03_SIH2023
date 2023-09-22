@@ -33,7 +33,10 @@
         <div class="questions">
           <div class="ques-rec"></div>
           <div class="ques-txt">
-            Question 1. WHAT IS THE NAME OF 5TH PLANET OF SOLAR SYSTEM?
+            {% if current_question %}
+            <form method="post">
+                {% csrf_token %}
+                <legend>{{ current_question.question_text }}</legend>
           </div>
         </div>
         <div class="option-1">
