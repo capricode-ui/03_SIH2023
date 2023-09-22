@@ -185,7 +185,7 @@
   color: var(--color-white);
   font-family: var(--font-bangers);
 }
-.submit{
+/* .submit-button{
   position: relative;
   left: 50vw;
   bottom: 34px;
@@ -198,4 +198,4 @@
   font-weight: bolder;
   font-family: cursive;
   letter-spacing: 2px;
-}
+} */
