@@ -377,3 +377,16 @@ a{
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+
+
+.logged-out-button {
+  position: absolute;
+  top: 33px;
+  left: 1144px;
+  width: 180px;
+  height: 44px;
+  border-radius: var(--br-4xs);
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(255, 98, 0, 0.821);
+}

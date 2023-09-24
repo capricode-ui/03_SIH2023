@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <style>
+        /* Inline CSS for a new color scheme */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* New color scheme */
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-brand:hover {
+            color: #ddd;
+        }
+    </style>
+    <!-- Include Bootstrap CSS from a CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Quizoo</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1>Welcome to Quizoo</h1>
+        <h2>Topics:</h2>
+
+
+        <ul>
+            <!-- Example for loop with Django-like template tags -->
+            {% for topic in topics %}
+            <li>{{topic.1}}</li>
+            {% endfor %}
+        </ul>
+
+        
+    </div>
+
+    <!-- Include Bootstrap JavaScript and jQuery (optional) from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+<!--a href=" url "quizes:quiz-list-topic"  "-->
