@@ -46,7 +46,7 @@
         </div>
         <div class="login-button">
           <img class="login-rec-icon" alt="" src="{% static 'Images/login-rec.svg'%}" />
-          <b class="login"><a href="../LOGIN PAGE/login.html">LOGIN</a></b>
+          <b class="login"><a href="{% url 'login'%}">LOGIN</a></b>
         </div>
         <div class="quizoo">
           <img class="icon" alt="" src="{% static "Images/icon.svg"%}" />
@@ -58,7 +58,7 @@
         <div class="sign-up-button">
           <img class="login-rec-icon" alt="" src="{% static "Images/sign-up-rec.svg"%}" />
 
-          <b class="sign-up"><a href="">SIGN UP</a></b>
+          <b class="sign-up"><a href="{% url 'Sign_up' %}">SIGN UP</a></b>
         </div>
       </div>
       <div class="main">
@@ -73,11 +73,11 @@
         </div>
         <div class="patents">
           <div class="patent-rec"></div>
-          <div class="patents-quiz"><a href="">Patent QUIZ</a></div>
+          <div class="patents-quiz"><a href="{% url 'patent'%}">Patent QUIZ</a></div>
         </div>
         <div class="trademark">
           <div class="patent-rec"></div>
-          <div class="trademark-quiz"><a href="">TRADEMARK QUIZ</a></div>
+          <div class="trademark-quiz"><a href="{% url 'Trademark'%}">TRADEMARK QUIZ</a></div>
         </div>
       </div>
       <div class="footer">
