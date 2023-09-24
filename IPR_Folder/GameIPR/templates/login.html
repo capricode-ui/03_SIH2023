@@ -45,11 +45,7 @@
     <div class="login">
       <div class="bg"></div>
       <div class="inner-rectangle"></div>
-<<<<<<< HEAD
       <img class="image-icon" alt="" src="{% static "Images/Image.png"%}" />
-=======
-      <img class="image-icon" alt="" src="{% static 'Images/login_image.png' %}"/>
->>>>>>> 4833b02da924879ee20f5f377f1806cbbcd91cad
 
       <b class="login1">Login</b>
       <div class="doesnt-have-an">Doesn’t have an account yet?</div>
@@ -68,22 +64,48 @@
           <label for="inputPassword4" class="formlabel">Password</label>
           <input type="password" name="password" class="form-control" id="inputPassword4" />
         </div>
-        
+        <div class="forgot-password">Forgot Password?</div>
         <div class="inside-email">enter 6 character or more</div>
       </div>
-      
+      <div class="remember-me">
+        <div class="remember-me1">Remember me</div>
+        <div class="remember-me-rec"></div>
+      </div>
       <div class="login-button">
         
       
       </div>
-      
+      <div class="login-in-with">
+        <div class="or-login-with">or login with</div>
+        <div class="login-in-with-child"></div>
+        <div class="login-in-with-item"></div>
+      </div>
+      <div class="google">
+        <div class="google1"></div>
+        <div class="google2">Google</div>
+        <img
+          class="flat-color-iconsgoogle"
+          alt=""
+          src="./public/flatcoloriconsgoogle.svg"
+        />
+      </div>
+      <div class="facebook">
+        <div class="facebook1"></div>
+        <div class="facebook2">Facebook</div>
+        <img
+          class="logosfacebook-icon"
+          alt=""
+          src="./public/logosfacebook.svg"
+        />
+      </div>
+    </div>
     
     <div class="container-fluid">
       {% if request.user.is_authenticated %}
         <p class="text-success"></p>
-        <p class="text-success"> </p>
+        <p class="text-success"></p>
       {% else %}
-        <p class="text-danger"></p>
+        <p class="text-danger">User is not logged in</p>
       {% endif %}
       <form action="{% url 'login' %}" method="post" class="row g3">
         {% csrf_token %}
