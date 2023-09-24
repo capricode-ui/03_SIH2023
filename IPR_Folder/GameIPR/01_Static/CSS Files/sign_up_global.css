@@ -8,19 +8,15 @@ body {
   --font-inter: Inter;
 
   /* font sizes */
-  --font-size-lgi: 19px;
-  --font-size-3xl: 22px;
-  --font-size-7xl: 26px;
+  --font-size-mid-9: 17.9px;
+  --font-size-5xl-4: 24.4px;
 
   /* Colors */
   --color-white: #fff;
-  --color-royalblue: #1877f2;
-  --color-whitesmoke: #f9f9f9;
-  --color-orangered: #ff3d00;
   --color-darkgray: #a59c9c;
-  --color-blueviolet: #9135e7;
+  --color-whitesmoke: #f9f9f9;
   --color-dimgray: #4e4a4a;
 
   /* Border radiuses */
-  --br-4xs: 9px;
+  --br-4xs-5: 8.5px;
 }
