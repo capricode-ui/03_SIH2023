@@ -9,6 +9,9 @@ def index(request):
 def copyindex(request):
     return render(request, 'copyindex.html')
 
+def profile(request):
+    return render(request, 'profile.html')
+
 def signup(request):
     if request.method == 'POST':
         first_name = request.POST.get('first_name')

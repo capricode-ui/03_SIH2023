@@ -130,6 +130,7 @@ a{
 }
 .quizoo1 {
   letter-spacing: 0.11em;
+  
 }
 .quizoo {
   position: absolute;
@@ -389,4 +390,27 @@ a{
   font-size: 20px;
   text-align: center;
   background-color: rgba(255, 98, 0, 0.821);
+}
+.profile-content{
+  position: absolute;
+  top: 120px;
+  left: 390px;
+  line-height: 60px;
+  color:black;
+  text-align:center;
+  font-size: large;
+  letter-spacing: 0.11em;
+}
+.profile {
+  position: absolute;
+  top: 42px;
+  left: 681px;
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(160, 68, 233, 0.85),
+    rgba(160, 68, 233, 0)
+  );
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
+  width: 854px;
+  height: 600px;
 }

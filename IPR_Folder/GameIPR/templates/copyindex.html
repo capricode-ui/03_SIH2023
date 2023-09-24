@@ -53,12 +53,12 @@
 
           <img class="qizzo-rec-icon" alt="" src="{% static "Images/qizzo-rec.svg"%}" />
 
-          <div class="quizoo1">QUIZOO</div>
+          <b class="quizoo1"><a href="{% url 'copyindex' %}">QUIZOO</a></b>
         </div>                                      
         <div class="sign-up-button">
           <img class="login-rec-icon" alt="" src="{% static "Images/sign-up-rec.svg"%}" />
 
-          <b class="sign-up"><a href="{% url 'signup' %}">PROFILE</a></b>
+          <b class="sign-up"><a href="{% url 'profile' %}">PROFILE</a></b>
         </div>
       </div>
 
@@ -112,23 +112,12 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      {% if request.user.is_authenticated %}
-          <p class="text-success">You are Logged In</p>
-          <p class="text-success">Username : {{ request.user.username }}</p>
-          <p class="text-success">first_name: {{ request.user.first_name }}</p>
-          <p class="text-success">last_name: {{ request.user.last_name }}</p>
-          
+    
         <div class="logged-out-button">
           <a href={% url 'logout_user' %} type="button" class="btn btn-success btn-lg"><b>LOGOUT USER</b></a>
         </div>
           
-          
-      {% else %}
-          <p class=" h3 text-danger">User is logged out</p>
-          <a href={% url 'signup' %} type="button" class="btn btn-success btn-lg">Register</a>
-          <a href={% url 'login' %} type="button" class="btn btn-success btn-lg">login</a>
-      {% endif %}
+        
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-
   beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
