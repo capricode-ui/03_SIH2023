@@ -1,16 +1,77 @@
+{% load static%}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    {% comment %} <link rel="stylesheet" href="{% static "CSS Files/login_global.css"%}" />
-    <link rel="stylesheet" href="{% static "CSS Files/login.css"%}" />
+    <link rel="stylesheet" href="{% static "CSS Files/Sign_up_global.css"%}" />
+    <link rel="stylesheet" href="{% static "CSS Files/Sign_up.css"%}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-    /> {% endcomment %}
+    /> 
   </head>
+  <style>
+    .password{
+      position:relative;
+      top:155px
+    }
+    .sign-up1{
+      position:relative;
+      top:145px;
+      
+    }
+    .password2{
+      position:relative;
+      top:185px;
+    }
+    .password4{
+      position:relative;
+      top:165px;
+    }
+    .password6{
+      position:relative;
+      top:143px;
+    }
+    .password8{
+      position:relative;
+      top:130px;
+    }
+    button[type="submit"]
+    {
+      border-radius: 8.46px;
+      background-color: #9135e7;
+      width: 443.68px;
+      height: 59.22px;
+      position: relative;
+      bottom: 265px;
+      left: 137px;
+      font-size: xx-large;
+      font-weight: bolder;
+      color: white;
+    }
+    input[type="text"]{
+      width:200px;
+      height:25px;
+      border-radius:12px;
+      margin-left:5px;
+    }
+    input[type="email"]{
+      width:200px;
+      height:25px;
+      border-radius:12px;
+      margin-left:5px;
+    }
+    input[type="password"]{
+      width:200px;
+      height:25px;
+      border-radius:12px;
+      margin-left:5px;
+    }
+    
+  </style>
+
   <body>
     {% comment %} <div class="sign-up">
       <div class="bg"></div>
@@ -61,33 +122,85 @@
         />
       </div>
     </div> {% endcomment %}
+
+
     <div class="container-fluid">
       <form action="{% url 'signup' %}" method="POST" class="row g-3">
         {% csrf_token %}
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">First Name</label>
-          <input name="first_name" type="text" class="form-control" id="" />
+        <div class="sign-up">
+          <div class="bg"></div>
+          <div class="inner-rectangle"></div>
+          <div class="email">
+            <div class="email-address"></div>
+            
+            <div class="inside-email"></div>
+          </div>
+         
+          <img class="image-icon" alt="" src="{% static "Images/Image.png"%}" />
+    
+          <b class="sign-up1">Sign Up</b>
+          <div class="email">
+            <div class="email-address"></div>
+            
+            <div class="inside-email"></div>
+          </div>
+          <div class="password">
+            <div class="password1"></div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">First Name</label>
+              <input name="first_name" type="text" class="form-control" id="" />
+            </div>
+            <br>
+            
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Last Name</label>
+              <input name="last_name" type="text" class="form-control" id="" />
+            </div>
+            <div class="inside-email3"></div>
+          </div>
+          <div class="create-account-button">
+            
+            
+          </div>
+          <div class="password2">
+            <div class="password1"></div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input name="email" type="email" class="form-control" id="inputEmail4" />
+            </div>
+            <div class="inside-email3"></div>
+          </div>
+          <div class="password4">
+            <div class="password1"></div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">user name</label>
+              <input name="username" type="text" class="form-control" id="" />
+            </div>
+            <div class="inside-email3"></div>
+          </div>
+          <div class="password6">
+            <div class="password1"></div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input name="password" type="password" class="form-control" id="inputPassword4" />
+            </div>
+            <div class="inside-email3"></div>
+          </div>
+           <div class="password8">
+            <div class="password1"></div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Confirm Password</label>
+              <input name="confirm_password" type="password" class="formcontrol" id="inputPassword4" />
+            </div>
+            <div class="inside-email3"></div>
+          </div> 
         </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Last Name</label>
-          <input name="last_name" type="text" class="form-control" id="" />
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input name="email" type="email" class="form-control" id="inputEmail4" />
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">user name</label>
-          <input name="username" type="text" class="form-control" id="" />
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input name="password" type="password" class="form-control" id="inputPassword4" />
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Confirm Password</label>
-          <input name="confirm_password" type="password" class="formcontrol" id="inputPassword4" />
-        </div>
+        
+        
+        
+        
+        
+        
         <div class="col-12">
           <button type="submit" class="btn btn-success btnlg">REGISTER</button>
         </div>
