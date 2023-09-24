@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Results</title>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <p>Your Score: {{ score }} / {{ total_questions }}</p>
+    <p>Percentage Score: {{ percentage_score }}%</p>
+    <p>Remarks: {% if percentage_score >= 60 %} Passed {% else %} Failed {% endif %}</p>
+    <!-- You can add more details or styling as needed -->
+    <a href={%url "quizes:topic-list"  %}>Retutn to Quiz Section </a>
+<hr>
+    <h1>Solutions for Incorrect Questions</h1>
+
+    {% for question in incorrect %}
+    <p>{{ question.text }}</p>
+    <ul>
+        <li>Option A: {{ question.option1 }}</li>
+        <li>Option B: {{ question.option2 }}</li>
+        <li>Option C: {{ question.option3 }}</li>
+        <li>Option D: {{ question.option4 }}</li>
+    </ul>
+    <p>Correct Option: {{ question.correct_option }}</p>
+
+    <p>Solution: {{ question.solution }}</p>
+<hr>
+
+{% endfor %}
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

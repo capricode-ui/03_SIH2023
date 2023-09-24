@@ -1,0 +1,49 @@
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Question</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <h1>Quiz Question</h1>
+    <form method="post" action="{% url "quizes:submit_quiz" topic=quiz.topic pk=quiz.pk %}">
+        {% csrf_token %}
+        <h2>Questions:</h2>
+        <ol>
+            {% for question in quiz.question_set.all %}
+                <li>
+                    <p>{{ question.text }}</p>
+                    {% if question.image_url %}
+                        <img src="{{ question.image_url }}" alt="Question Image">
+                    {% endif %}
+                    <ol type="A">
+                        <li><input type="radio" name="question_{{ question.id }}" value="A"> {{ question.option1 }}</li>
+                        <li><input type="radio" name="question_{{ question.id }}" value="B"> {{ question.option2 }}</li>
+                        <li><input type="radio" name="question_{{ question.id }}" value="C"> {{ question.option3 }}</li>
+                        <li><input type="radio" name="question_{{ question.id }}" value="D"> {{ question.option4 }}</li>
+                    </ol>
+                    
+                </li>
+            {% endfor %}
+        </ol>
+        <input type="submit" value="Submit">
+    </form>
+    
+
+    
+</body>
+</html>
+
+
+    
+    
+    <!-- Add more content or formatting as needed -->
+</body>
+</html>
+
+

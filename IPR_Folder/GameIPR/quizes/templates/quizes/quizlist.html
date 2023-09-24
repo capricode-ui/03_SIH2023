@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz List</title>
+</head>
+<body>
+    <h1>{{ topic }}</h1>
+    <ul>
+        {% for quiz in quizzes %}
+            <li>
+                <a href="{% url "quizes:quiz-detail" topic=quiz.topic pk=quiz.pk %}">{{ quiz.name }} </a>
+                
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
