@@ -89,15 +89,7 @@
   width: 471px;
   height: 45px;
 }
-.forgot-password {
-  position: absolute;
-  top: 7px;
-  left: 294px;
-  font-size: 18px;
-  text-decoration: underline;
-  letter-spacing: 0.09em;
-  color: var(--color-darkorchid);
-}
+
 .password {
   position: absolute;
   top: 415px;

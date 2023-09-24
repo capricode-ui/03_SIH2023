@@ -12,12 +12,40 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
     />
   </head>
+  <style>
+    button[type="submit"]{
+      position: relative;
+      bottom: 65vh;
+      left: 27vh;
+      height: 63px;
+      border-radius: var(--br-4xs);
+      background-color: var(--color-darkorchid);
+      width: 472px;
+      cursor:pointer;
+      font-size: xx-large;
+      font-weight: bolder;
+      color: white;
+
+    }
+    .forgot-password {
+      position: relative;
+      top: -20px;
+      left: 313px;
+      font-size: 18px;
+      text-decoration: underline;
+      letter-spacing: 0.09em;
+      color: var(--color-darkorchid);
+    }
+    
+
+
+  </style>
   <body>
 
     <div class="login">
       <div class="bg"></div>
       <div class="inner-rectangle"></div>
-      <img class="image-icon" alt="" src="./public/image@2x.png" />
+      <img class="image-icon" alt="" src="{% static "Images/Image.png"%}" />
 
       <b class="login1">Login</b>
       <div class="doesnt-have-an">Doesn’t have an account yet?</div>
@@ -44,10 +72,8 @@
         <div class="remember-me-rec"></div>
       </div>
       <div class="login-button">
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">LOG IN</button>
-        </div>
         
+      
       </div>
       <div class="login-in-with">
         <div class="or-login-with">or login with</div>
@@ -76,16 +102,18 @@
     
     <div class="container-fluid">
       {% if request.user.is_authenticated %}
-        <p class="text-success">You are Logged In</p>
-        <p class="text-success">Username : </p>
+        <p class="text-success"></p>
+        <p class="text-success"> </p>
       {% else %}
-        <p class="text-danger">User is not logged in</p>
+        <p class="text-danger"></p>
       {% endif %}
       <form action="{% url 'login' %}" method="post" class="row g3">
         {% csrf_token %}
         
         
-        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">LOG IN</button>
+        </div>
       </form>
       <div class="form-group">
         {% for message in messages %}
