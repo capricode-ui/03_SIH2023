@@ -5,21 +5,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Quiz Question</title>
-    <style>
+    
+    <!--style>
       
-    </style>
+      .image{
+        width: 30px;
+        height:30px;
+        
+      }
+    </style-->
+
+
+
 </head>
 <body>
     <h1>Quiz Question</h1>
     <form method="post" action="{% url "quizes:submit_quiz" topic=quiz.topic pk=quiz.pk %}">
         {% csrf_token %}
         <h2>Questions:</h2>
+        <p > <b>{{quiz.description}}</b> </p>
         <ol>
             {% for question in quiz.question_set.all %}
                 <li>
                     <p>{{ question.text }}</p>
                     {% if question.image_url %}
+                    <div class='image'>
                         <img src="{{ question.image_url }}" alt="Question Image">
+                    </div>
                     {% endif %}
                     <ol type="A">
                         <li><input type="radio" name="question_{{ question.id }}" value="A"> {{ question.option1 }}</li>
@@ -31,6 +43,8 @@
                 </li>
             {% endfor %}
         </ol>
+
+        
         <input type="submit" value="Submit">
     </form>
     
