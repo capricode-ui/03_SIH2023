@@ -98,6 +98,17 @@ a{
   height: 44px;
   color: var(--color-whitesmoke);
 }
+
+.logged-in-button {
+  position: absolute;
+  top: 39px;
+  left: 1144px;
+  width: 180px;
+  height: 44px;
+  color: var(--color-whitesmoke);
+}
+
+
 .icon {
   position: absolute;
   top: -17px;
@@ -303,7 +314,7 @@ a{
   top: 53px;
   left: 730px;
   display: inline-block;
-  width: 256px;
+  width: 300px;
   height: 82px;
 }
 .contact-us {

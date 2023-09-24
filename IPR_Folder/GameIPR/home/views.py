@@ -6,12 +6,8 @@ from django.contrib.auth.models import User,auth
 def index(request):
     return render(request,'index.html')
 
-# def login(request):
-#     return render(request,'login.html')
-
-# def signup(request):
-#     return render(request,'Sign_up.html')
-
+def copyindex(request):
+    return render(request, 'copyindex.html')
 
 def signup(request):
     if request.method == 'POST':
@@ -46,7 +42,7 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            return redirect('index')
+            return redirect('copyindex')
         else:
             messages.info(request, 'Invalid Username or Password')
             return redirect('login')
