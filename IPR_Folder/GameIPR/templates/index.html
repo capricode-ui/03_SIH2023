@@ -112,5 +112,23 @@
         <div class="about-us">ABOUT US</div>
       </div>
     </div>
+
+    <div class="container-fluid">
+      {% if request.user.is_authenticated %}
+          <p class="text-success">You are Logged In</p>
+          <p class="text-success">Username : {{ request.user.username }}</p>
+          <p class="text-success">first_name: {{ request.user.first_name }}</p>
+          <p class="text-success">last_name: {{ request.user.last_name }}</p>
+          <a href={% url 'logout_user' %} type="button" class="btn btn-success btn-lg">logout user</a>
+      {% else %}
+          <p class=" h3 text-danger">User is logged out</p>
+          <a href={% url 'signup' %} type="button" class="btn btn-success btn-lg">Register</a>
+          <a href={% url 'login' %} type="button" class="btn btn-success btn-lg">login</a>
+      {% endif %}
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-
+  beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+  pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
   </body>
 </html>
