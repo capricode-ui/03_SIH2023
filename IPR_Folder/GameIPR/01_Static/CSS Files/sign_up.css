@@ -3,33 +3,17 @@
   top: 0;
   left: 0;
   background: radial-gradient(50% 50%at 50% 50%, #9135e7, transparent);
-  width: 1600px;
-  height: 960px;
+  width: 1504px;
+  height: 902.4px;
 }
-.image-icon,
 .inner-rectangle {
   position: absolute;
-  top: 98px;
-  height: 745px;
-}
-.inner-rectangle {
-  left: 101px;
+  top: 92.12px;
+  left: 94.94px;
   background-color: var(--color-whitesmoke);
-  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
-  width: 1410px;
-}
-.image-icon {
-  left: 720px;
-  width: 791px;
-  object-fit: cover;
-}
-.sign-up1 {
-  position: absolute;
-  top: 177px;
-  left: 299px;
-  font-size: 60px;
-  letter-spacing: 0.09em;
-  color: #000;
+  box-shadow: 0 3.760000228881836px 47px rgba(0, 0, 0, 0.25);
+  width: 1325.4px;
+  height: 700.3px;
 }
 .email-address {
   position: absolute;
@@ -37,37 +21,53 @@
   left: 0;
   letter-spacing: 0.02em;
   display: inline-block;
-  width: 179px;
-  height: 30.09px;
+  width: 168.26px;
+  height: 28.28px;
 }
 .email-rec {
   position: absolute;
-  top: 45.62px;
+  top: 42.88px;
   left: 0;
-  border-radius: var(--br-4xs);
+  border-radius: 8.46px;
   background-color: var(--color-whitesmoke);
-  border: 3px solid var(--color-darkgray);
+  border: 2.8px solid var(--color-darkgray);
   box-sizing: border-box;
-  width: 472px;
-  height: 43.68px;
+  width: 443.68px;
+  height: 41.06px;
 }
 .inside-email {
   position: absolute;
-  top: 56.29px;
-  left: 26px;
-  font-size: var(--font-size-lgi);
+  top: 52.92px;
+  left: 24.44px;
+  font-size: 17.86px;
   letter-spacing: 0.09em;
   color: var(--color-darkgray);
   display: inline-block;
-  width: 194px;
-  height: 22.32px;
+  width: 182.36px;
+  height: 20.98px;
 }
-.email {
+ .email,
+.image-icon {
   position: absolute;
-  top: 284px;
-  left: 191px;
-  width: 472px;
-  height: 89.29px;
+  top: 160.4px;
+  left: 135px;
+  width: 443.68px;
+  height: 83.94px;
+} 
+.image-icon {
+  top: 92.12px;
+  left: 676.8px;
+  width: 743.54px;
+  height: 700.3px;
+  object-fit: cover;
+}
+.sign-up1 {
+  position: absolute;
+  top: 92.4px;
+  left: 281px;
+  font-size: 56.4px;
+  letter-spacing: 0.09em;
+  color: #000;
 }
 .password1 {
   position: absolute;
@@ -77,204 +77,91 @@
 }
 .password-rec {
   position: absolute;
-  top: 47px;
-  left: 1px;
-  border-radius: var(--br-4xs);
+  top: 44.18px;
+  left: 0.94px;
+  border-radius: 8.46px;
   background-color: var(--color-whitesmoke);
-  border: 3px solid var(--color-darkgray);
+  border: 2.8px solid var(--color-darkgray);
   box-sizing: border-box;
-  width: 471px;
-  height: 45px;
+  width: 442.74px;
+  height: 42.3px;
 }
-.inside-email1 {
+.inside-email3 {
   position: absolute;
-  top: 58px;
-  left: 26px;
-  font-size: var(--font-size-lgi);
+  top: 54.52px;
+  left: 24.44px;
+  font-size: 17.86px;
   letter-spacing: 0.09em;
   color: var(--color-darkgray);
 }
 .password {
   position: absolute;
-  top: 401px;
-  left: 191px;
-  width: 472px;
-  height: 92px;
-}
-.i-read-and {
-  top: 0;
-  left: 29px;
-}
-.i-read-and,
-.rec,
-.term-text {
-  position: absolute;
-}
-.term-text {
-  top: 0;
-  left: 234px;
-  color: var(--color-blueviolet);
-  display: inline-block;
-  width: 239px;
-  height: 22px;
-}
-.rec {
-  top: 4px;
-  left: 0;
-  border-radius: 7px;
-  background-color: var(--color-whitesmoke);
-  border: 3px solid var(--color-darkgray);
-  box-sizing: border-box;
-  width: 22px;
-  height: 21px;
-}
-.terms-and-condition {
-  position: absolute;
-  top: 528px;
-  left: 191px;
-  width: 473px;
-  height: 27px;
-  font-size: var(--font-size-3xl);
-  color: var(--color-darkgray);
+  top: 263.4px;
+  left: 135px;
+  width: 443.68px;
+  height: 86.48px;
 }
 .create-account,
 .login-rec {
   position: absolute;
   top: 0;
-  height: 63px;
+  height: 59.22px;
 }
 .login-rec {
   left: 0;
-  border-radius: var(--br-4xs);
-  background-color: var(--color-blueviolet);
-  width: 472px;
+  border-radius: 8.46px;
+  background-color: #9135e7;
+  width: 443.68px;
 }
 .create-account {
-  left: calc(50% - 179px);
+  left: calc(50% - 168.26px);
   letter-spacing: 0.14em;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 348px;
+  width: 327.12px;
 }
 .create-account-button {
   position: absolute;
-  top: 586px;
-  left: 192px;
-  width: 472px;
-  height: 63px;
+  top: 819.4px;
+  left: 137px;
+  width: 443.68px;
+  height: 59.22px;
   text-align: center;
   color: var(--color-white);
 }
-.or-continue-with {
+.password2,
+.password4,
+.password6,
+.password8 {
   position: absolute;
-  top: 0;
-  left: 134px;
-  letter-spacing: 0.09em;
+  top: 376.4px;
+  left: 135px;
+  width: 443.68px;
+  height: 86.48px;
 }
-.continue-with-child,
-.continue-with-item {
-  position: absolute;
-  top: 12.5px;
-  left: -0.5px;
-  border-top: 1px solid var(--color-darkgray);
-  box-sizing: border-box;
-  width: 120px;
-  height: 1px;
+.password4,
+.password6,
+.password8 {
+  top: 489.4px;
 }
-.continue-with-item {
-  left: 351.5px;
+.password6,
+.password8 {
+  top: 595.4px;
+  left: 136px;
 }
-.continue-with {
-  position: absolute;
-  top: 671px;
-  left: 192px;
-  width: 471px;
-  height: 27px;
-  font-size: var(--font-size-3xl);
-  color: var(--color-darkgray);
-}
-.google1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: var(--br-4xs);
-  background-color: var(--color-whitesmoke);
-  border: 3px solid var(--color-orangered);
-  box-sizing: border-box;
-  width: 187px;
-  height: 45px;
-}
-.google2 {
-  position: absolute;
-  top: 11px;
-  left: 56px;
-  letter-spacing: 0.09em;
-  display: inline-block;
-  width: 197px;
-}
-.flat-color-iconsgoogle {
-  position: absolute;
-  top: 6px;
-  left: 11px;
-  width: 31px;
-  height: 33px;
-  overflow: hidden;
-}
-.facebook1,
-.google {
-  position: absolute;
-  height: 45px;
-}
-.google {
-  top: 732px;
-  left: 193px;
-  width: 253px;
-  font-size: var(--font-size-lgi);
-  color: var(--color-orangered);
-}
-.facebook1 {
-  top: 0;
-  left: 0;
-  border-radius: var(--br-4xs);
-  background-color: var(--color-whitesmoke);
-  border: 3px solid var(--color-royalblue);
-  box-sizing: border-box;
-  width: 187px;
-}
-.facebook2 {
-  position: absolute;
-  top: 11px;
-  left: 63px;
-  letter-spacing: 0.09em;
-  display: inline-block;
-  width: 197px;
-}
-.logosfacebook-icon {
-  position: absolute;
-  top: 7px;
-  left: 14px;
-  width: 35px;
-  height: 30px;
-  overflow: hidden;
-}
-.facebook {
-  position: absolute;
-  top: 732px;
-  left: 477px;
-  width: 260px;
-  height: 45px;
-  font-size: var(--font-size-lgi);
-  color: var(--color-royalblue);
+.password8 {
+  top: 700px;
+  left: 137px;
 }
 .sign-up {
   position: relative;
   background-color: var(--color-white);
   width: 100%;
-  height: 960px;
+  height: 902.4px;
   overflow: hidden;
   text-align: left;
-  font-size: var(--font-size-7xl);
+  font-size: 24.44px;
   color: var(--color-dimgray);
   font-family: var(--font-inter);
 }
