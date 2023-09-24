@@ -58,7 +58,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Quizoo</a>
+            <a class="navbar-brand" href="{% url 'copyindex' %}">Quizoo</a>
         </div>
     </nav>
     <div class="container mt-5">
@@ -72,6 +72,8 @@
             <li><a href="{% url 'quizes:quiz-list-topic' topic=topic.0 %}">{{topic.1}}</a></li>
             {% endfor %}
         </ul>
+
+      
 
         
     </div>
