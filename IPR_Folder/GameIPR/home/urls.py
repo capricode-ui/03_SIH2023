@@ -5,7 +5,10 @@ from home import views
 
 
 urlpatterns = [
-   path("",views.index,name='home')
+   path("",views.index,name='home'),
+   path("login",views.login,name='login'),
+   path("signup",views.signup,name='signup')
+   
    
  
 ]
