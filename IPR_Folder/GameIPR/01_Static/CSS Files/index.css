@@ -3,10 +3,11 @@
 .store,
 .study {
   position: absolute;
-  top: 10px;
-  left: 206px;
+  top: 15px;
+  left: 220px;
+  font-size: large;
   letter-spacing: 0.11em;
-  font-weight: 600;
+  font-weight: 300;
   text-decoration: none;
 }
 a{
@@ -15,34 +16,34 @@ a{
 .coins,
 .store,
 .study {
-  left: 52px;
+  left: 65px;
   text-decoration: none;
   
 }
 .coins,
 .store {
-  left: 538px;
-  font-size: var(--font-size-7xl);
+  left: 485px;
+  
 }
 .coins {
-  left: 692px;
+  left: 620px;
 }
 .icoutline-leaderboard-icon,
 .vector-icon {
   position: absolute;
   top: 10px;
-  left: 167px;
-  width: 39px;
+  left: 180px;
+  width: 25px;
   height: 31px;
   overflow: hidden;
 }
 .vector-icon {
   height: 40%;
-  width: 3.08%;
+  width: 2.08%;
   top: 21.54%;
   right: 34.85%;
   bottom: 38.46%;
-  left: 62.07%;
+  left: 56.07%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -50,20 +51,20 @@ a{
 .phnotebook-icon {
   position: absolute;
   top: 8px;
-  left: 15px;
-  width: 37px;
+  left: 25px;
+  width: 25px;
   height: 38px;
   overflow: hidden;
 }
 .phcoins-duotone-icon {
   top: 1px;
-  left: 660px;
-  width: 32px;
+  left: 585px;
+  width: 25px;
   height: 45px;
 }
 .navigation {
   position: absolute;
-  top: 34px;
+  top: 15px;
   left: 310px;
   width: 812px;
   height: 65px;
@@ -76,14 +77,14 @@ a{
   top: 0;
   left: 0;
   border-radius: var(--br-4xs);
-  width: 180px;
+  width: 150px;
   height: 44px;
   cursor: pointer;
 }
 .login {
   position: absolute;
-  top: 8px;
-  left: 50px;
+  top: 12px;
+  left: 45px;
   letter-spacing: 0.09em;
   display: inline-block;
   width: 93px;
@@ -92,7 +93,7 @@ a{
 }
 .login-button {
   position: absolute;
-  top: 39px;
+  top: 20px;
   left: 1144px;
   width: 180px;
   height: 44px;
@@ -111,22 +112,22 @@ a{
 
 .icon {
   position: absolute;
-  top: -17px;
+  top: -10px;
   left: -62px;
-  width: 62px;
+  width: 50px;
   height: 78px;
   overflow: hidden;
 }
 .qizzo-rec-icon,
 .quizoo1 {
   position: absolute;
-  top: -15px;
+  top: -1px;
   left: 0;
 }
 .qizzo-rec-icon {
   border-radius: var(--br-4xs);
   width: 205px;
-  height: 74px;
+  height: 60px;
 }
 .quizoo1 {
   letter-spacing: 0.11em;
@@ -134,17 +135,17 @@ a{
 }
 .quizoo {
   position: absolute;
-  top: 44px;
+  top: 15px;
   left: 84px;
   width: 180px;
   height: 44px;
-  font-size: 61px;
+  font-size: 50px;
   font-family: var(--font-bangers);
 }
 .sign-up {
   position: absolute;
-  top: 8px;
-  left: 35px;
+  top: 12px;
+  left: 38px;
   letter-spacing: 0.09em;
   display: inline-block;
   width: 129px;
@@ -153,8 +154,8 @@ a{
 }
 .sign-up-button {
   position: absolute;
-  top: 39px;
-  left: 1349px;
+  top: 20px;
+  left: 1330px;
   width: 180px;
   height: 44px;
   color: var(--color-whitesmoke);
@@ -168,7 +169,7 @@ a{
   top: -6px;
   left: 0;
   background-color: rgba(160, 68, 233, 0.85);
-  height: 126px;
+  height: 80px;  
 }
 .bg-mid {
   top: 0;
@@ -178,29 +179,25 @@ a{
 }
 .d49688b462000f1a628c829aa73c08-icon {
   position: absolute;
-  top: 0;
-  left: 3px;
-  width: 608px;
-  height: 691px;
+  top: 12px;
+  left: 50px;
+  width: 550px;
+  height: 700px;
   object-fit: cover;
 }
 .copyright-quiz {
   position: absolute;
   top: 48px;
-  left: 182px;
+  left: 275px;
   letter-spacing: 0.11em;
 }
 .copyrights,
 .patent-rec {
   position: absolute;
-  top: 42px;
+  top: 3px;
   left: 681px;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    rgba(160, 68, 233, 0.85),
-    rgba(160, 68, 233, 0)
-  );
-  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
+  color:blueviolet;
+  box-shadow: 0 4px 50px rgba(174, 4, 221, 0.25);
   width: 854px;
   height: 171px;
 }
@@ -211,12 +208,13 @@ a{
 .patents-quiz {
   position: absolute;
   top: 48px;
-  left: calc(50% - 181px);
+  color:blueviolet;
+  left: calc(50% - 110px);
   letter-spacing: 0.11em;
 }
 .patents {
   position: absolute;
-  top: 255px;
+  top: 210px;
   left: 682px;
   width: 854px;
   height: 171px;
@@ -225,14 +223,15 @@ a{
 .trademark-quiz {
   position: absolute;
   top: 48px;
-  left: calc(50% - 249px);
+  color:blueviolet;
+  left: calc(50% - 200px);
   letter-spacing: 0.11em;
 }
 .main,
 .trademark {
   position: absolute;
-  top: 468px;
-  left: 681px;
+  top: 410px;
+  left: 700px;
   width: 854px;
   height: 171px;
 }
@@ -256,7 +255,7 @@ a{
   position: absolute;
   top: 104px;
   left: 34px;
-  font-size: 18px;
+  font-size: 10px;
   letter-spacing: 0.11em;
   font-weight: 600;
 }
@@ -266,20 +265,22 @@ a{
 .abhishek-rajput-dhaval-container {
   position: absolute;
   top: 52px;
-  left: 1349px;
+  left: 1250px;
   letter-spacing: 0.11em;
-  font-weight: 600;
+  line-height: 25px;
+  font-size: medium;
+  /* font-weight: 600; */
 }
 .people-icon-1,
 .people-icon-2,
 .people-icon-3 {
   position: absolute;
   height: 12.41%;
-  width: 1.16%;
-  top: 37.06%;
+  width: 0.80%;
+  top: 38.06%;
   right: 16.84%;
   bottom: 50.52%;
-  left: 82%;
+  left: 1220px;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -296,8 +297,8 @@ a{
 .designed-by {
   position: absolute;
   top: 16px;
-  left: 1310px;
-  font-size: var(--font-size-6xl);
+  left: 1220px;
+  font-size: var(--font-size-5xl);
   letter-spacing: 0.11em;
   font-weight: 600;
 }
@@ -309,7 +310,9 @@ a{
 .fax-91-05734-222251-container {
   position: absolute;
   letter-spacing: 0.11em;
-  font-weight: 600;
+  font-size: medium;
+  line-height: 25px;
+  /* font-weight: 600; */
 }
 .fax-91-05734-222251-container {
   top: 53px;
@@ -321,12 +324,12 @@ a{
 .contact-us {
   top: 16px;
   left: 696px;
-  font-size: var(--font-size-6xl);
+  font-size: var(--font-size-5xl);
 }
 .phone-icon {
   position: absolute;
   height: 18.18%;
-  width: 1.63%;
+  width: 1.1%;
   top: 36.36%;
   right: 55.06%;
   bottom: 45.45%;
@@ -354,7 +357,7 @@ a{
   position: absolute;
   top: 26px;
   left: 34px;
-  font-size: var(--font-size-7xl);
+  font-size: var(--font-size-4xl);
   letter-spacing: 0.11em;
   font-weight: 600;
 }
@@ -374,7 +377,7 @@ a{
   height: 960px;
   overflow: hidden;
   text-align: left;
-  font-size: var(--font-size-6xl);
+  font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--font-inter);
 }
@@ -382,23 +385,24 @@ a{
 
 .logged-out-button {
   position: absolute;
-  top: 33px;
-  left: 1144px;
+  top: 20px;
+  left: 1100px;
   width: 180px;
-  height: 44px;
-  border-radius: var(--br-4xs);
-  font-size: 20px;
+  height: 30px;
   text-align: center;
+  border-radius: var(--br-4xs);
+  font-size: 18px;
   background-color: rgba(255, 98, 0, 0.821);
 }
+
 .profile-content{
   position: absolute;
   top: 120px;
-  left: 390px;
+  left: 370px;
   line-height: 60px;
   color:black;
   text-align:center;
-  font-size: large;
+  font-size:30px;
   letter-spacing: 0.11em;
 }
 .profile {

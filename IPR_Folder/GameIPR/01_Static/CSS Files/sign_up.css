@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   background: radial-gradient(50% 50%at 50% 50%, #9135e7, transparent);
-  width: 1504px;
-  height: 902.4px;
+  width: 1200px;
+  height: 700.4px;
 }
 .inner-rectangle {
   position: absolute;
@@ -12,7 +12,7 @@
   left: 94.94px;
   background-color: var(--color-whitesmoke);
   box-shadow: 0 3.760000228881836px 47px rgba(0, 0, 0, 0.25);
-  width: 1325.4px;
+  width: 1200.4px;
   height: 700.3px;
 }
 .email-address {
@@ -43,7 +43,7 @@
   letter-spacing: 0.09em;
   color: var(--color-darkgray);
   display: inline-block;
-  width: 182.36px;
+  width: 182\.36px;
   height: 20.98px;
 }
  .email,
@@ -52,14 +52,14 @@
   top: 160.4px;
   left: 135px;
   width: 443.68px;
-  height: 83.94px;
+  height: 200.94px;
 } 
 .image-icon {
   top: 92.12px;
   left: 676.8px;
-  width: 743.54px;
+  width: 700.54px;
   height: 700.3px;
-  object-fit: cover;
+  object-fit:scale-down;
 }
 .sign-up1 {
   position: absolute;

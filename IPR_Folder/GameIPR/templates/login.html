@@ -1,19 +1,16 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="{% static "CSS Files/login_global.css"%}" />
-    <link rel="stylesheet" href="{% static "CSS Files/login.css"%}" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-    />
+    <link rel="stylesheet" href="{% static 'CSS Files/login_global.css' %}" />
+    <link rel="stylesheet" href="{% static 'CSS Files/login.css' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
   </head>
   <style>
-    button[type="submit"]{
+    button[type='submit'] {
       position: relative;
       bottom: 65vh;
       left: 27vh;
@@ -21,13 +18,11 @@
       border-radius: var(--br-4xs);
       background-color: var(--color-darkorchid);
       width: 472px;
-      cursor:pointer;
+      cursor: pointer;
       font-size: xx-large;
       font-weight: bolder;
       color: white;
-      margin-top:25px;
-      
-
+      margin-top: 25px;
     }
     .forgot-password {
       position: relative;
@@ -38,22 +33,14 @@
       letter-spacing: 0.09em;
       color: var(--color-darkorchid);
     }
-    .form-control{
-      width:200px;
-      height:25px;
-      border-radius:12px;
-      margin-left:5px;
-
-
+    .form-control {
+      width: 200px;
+      height: 25px;
+      border-radius: 12px;
+      margin-left: 5px;
     }
-
-
-
   </style>
   <body>
-
- 
-    
     <div class="container-fluid">
       {% if request.user.is_authenticated %}
         <p class="text-success"></p>
@@ -66,8 +53,8 @@
         <div class="login">
           <div class="bg"></div>
           <div class="inner-rectangle"></div>
-          <img class="image-icon" alt="" src="{% static "Images/Image.png"%}" />
-          
+          <img class="image-icon" alt="" src="{% static 'Images/3d-cartoon-character-fun-teenager.jpg' %}" />
+
           <b class="login1">Login</b>
           <div class="doesnt-have-an">Doesn’t have an account yet?</div>
           <a href="{% url 'signup' %}"><div class="sign-up">Sign up</div></a>
@@ -85,29 +72,20 @@
               <label for="inputPassword4" class="formlabel">Password</label>
               <input type="password" name="password" class="form-control" id="inputPassword4" />
             </div>
-            
-            
-           
           </div>
-          
-          
-          
-          
         </div>
-        
-        
+
         <div class="col-12">
           <button type="submit" class="btn btn-primary">LOG IN</button>
-          
         </div>
       </form>
       <div class="form-group">
         {% for message in messages %}
-        <div class="alert alert-danger" role="alert">{{ message }}</div>
+          <div class="alert alert-danger" role="alert">{{ message }}</div>
         {% endfor %}
       </div>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-
 beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
 pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
